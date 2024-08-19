@@ -1,8 +1,13 @@
 import React from 'react';
+import Layout from './Components/Layout';
+import GlobalStyles from './styles/GlobalStyles';
 
 function App() {
   return (
-    <h1>CloneUIDiscord</h1>
+    <>
+      <Layout />
+      <GlobalStyles />
+    </>
   );
 }
 
