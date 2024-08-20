@@ -34,8 +34,10 @@ Recriando a Interface do Discord com ReactJS | UI Clone #5
 (XI) Passar para o App importar Layout
 
 # Ctrl + D > Seleciona palavras idênticas e edita todas.
+# Ctrl + A > Seleciona tudo
 
 (XII) Vamos criar os componentes que vão preencher o Layout... (ServerList)
+(XIII) Instale React.Icons para importar os icons --> Add NM to gitignore
 
 
 
