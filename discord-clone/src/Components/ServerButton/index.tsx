@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from './styles';
-import Logo from '../../assets/LogoRocketseat.svg';
+import Logo from '../../assets/Logo.svg';
 
 // as props são mecanismos que permitem transmitir dados de um componente pai para um componente filho
 // conectar os componentes entre si  

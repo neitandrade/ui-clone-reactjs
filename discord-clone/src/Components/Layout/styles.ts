@@ -15,8 +15,8 @@ export const Grid = styled.div`
     grid-template-rows: 46px auto 52px; // Altura
     grid-template-areas:
     'SL SN CI CI' // Ocupam a header
-    'SL CL CD UL'; // Ocupam o corpo
-    'Sl UI CD UL'; // Ocupam o footer
+    'SL CL CD UL' // Ocupam o corpo
+    'SL UI CD UL'; // Ocupam o footer
 
     height: 100vh;
 `;

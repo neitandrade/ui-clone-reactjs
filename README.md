@@ -38,6 +38,8 @@ Recriando a Interface do Discord com ReactJS | UI Clone #5
 
 (XII) Vamos criar os componentes que vão preencher o Layout... (ServerList)
 (XIII) Instale React.Icons para importar os icons --> Add NM to gitignore
+(XIV) Estrutura do Componente --> INDEX (React + Javascript) 
+      Esitlo do Componente --> STYLES (CSS)
 
 
 

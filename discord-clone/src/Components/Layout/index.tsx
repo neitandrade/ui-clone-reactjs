@@ -14,6 +14,10 @@ import ServerList from "../ServerList";
 import ServerName from "../ServerName";
 import ChannelInfo from "../ChannelInfo";
 import ChannelList from '../ChannelList';
+import UserInfo from "../UserInfo";
+import UserList from "../UserList";
+
+// OBS: basta colocar o nome do componente abaixo para que automaticamente seja criado o import Component.
 
 // Especifica pro TypeScript que estamos criando um componente react.
 const Layout: React.FC = () => {
@@ -23,6 +27,9 @@ const Layout: React.FC = () => {
         <ServerName />
         <ChannelInfo />
         <ChannelList />
+        <UserInfo />
+        {/* <ChannelData /> */} 
+        <UserList />
        </Grid>
     );
 }
