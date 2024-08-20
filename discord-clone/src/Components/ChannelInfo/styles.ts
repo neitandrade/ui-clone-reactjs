@@ -1,28 +1,46 @@
-import styled from "styled-components";
-import { Hashtag } from '@styled-icons/heroicons-outline';
-
-// Copia o import, seleciona todas as virgulas com ctrl + d, e exporta aqui.
+import styled from 'styled-components';
+import { FaHashtag } from "react-icons/fa";
 
 export const Container = styled.div`
-    grid-area: CI;
-    display: flex;
-    align-items: center;
-    padding: 0 17px;
-    background-color: var(--primary);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
-    z-index: 2; //Sobressair na camada de outros componentes
+  grid-area: CI;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 17px;
+  background-color: var(--primary);
+
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 0px 0px;
+  z-index: 2;
 `;
 
+export const HashtagIcon = styled(FaHashtag)`
+  width: 24px;
+  height: 24px;
 
-// Chama a função 
-export const HashtagIcons = styled(Hashtag)`
-    width: 24px;
-    height: 24px;
-    color: var(--symbol);
+  color: var(--symbol);
 `;
 
-export const Tittle = styled.div``;
+export const Title = styled.h1`
+  margin-left: 9px;
 
-export const Separator = styled.div``;
+  font-size: 16px;
+  font-weight: bold;
 
-export const Description = styled.div``;
+  color: var(--white);
+`;
+
+export const Separator = styled.div`
+  height: 24px;
+  width: 1px;
+
+  background-color: var(--white);
+  opacity: 0.2;
+
+  margin: 0 13px;
+`;
+
+export const Description = styled.span`
+  font-size: 15px;
+  color: var(--gray);
+`;

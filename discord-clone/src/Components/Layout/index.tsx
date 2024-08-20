@@ -13,6 +13,7 @@ import { Grid } from './styles'; // Importa o componente Grid do arquivo styles.
 import ServerList from "../ServerList";
 import ServerName from "../ServerName";
 import ChannelInfo from "../ChannelInfo";
+// import ChannelList from '../ChannelList';
 
 // Especifica pro TypeScript que estamos criando um componente react.
 const Layout: React.FC = () => {
@@ -21,6 +22,7 @@ const Layout: React.FC = () => {
         <ServerList />
         <ServerName />
         <ChannelInfo />
+        {/* <ChannelList /> */}
        </Grid>
     );
 }

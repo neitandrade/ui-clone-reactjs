@@ -4,8 +4,8 @@ import { Props } from '.';
 
 export const Button = styled.button<Props>`
     // display: flex;
-    // algin-items: center; //V
-    // justify-content: center; //H
+    algin-items: center; //V
+    justify-content: center; //H
     flex-shrink: 0; // Não permite que o botão seja compresso
 
     width: 48px;
@@ -51,21 +51,21 @@ export const Button = styled.button<Props>`
         right: -4px;
 
         border-radius: 12px;
-        border: 4px solid var(--quaternary);
+        border: 4px solid var(--terciary);
 
         text-align: right;
         font-size: 13px;
         font-weight: bold;
         color: var(--white);
 
-        content: '${props => props.mentions && props.mentions}'; //Se tiver menções, pega o nº de menções
-        display: &{props =: props.mentions && props.mentions > 0 ? 'inline' : 'none'}
+        content: '${(props) => props.mentions && props.mentions}'; //Se tiver menções, pega o nº de menções
+        display: &{(props) => props.mentions && props.mentions > 0 ? 'inline' : 'none'}
         }
 
-
     transition: border-radius .2s, background-color .2s;
+
     &.activate, &:hover {
         border-radius: 16px;
-        background: ${(props) => props.isHome ? 'var(--rocketseat)' : 'var(--discord)}'
+        background-color: ${(props) => props.isHome ? 'var(--rocketseat)' : 'var(--discord)}'
     }
 `;

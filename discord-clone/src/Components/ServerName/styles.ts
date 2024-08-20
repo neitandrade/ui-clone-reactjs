@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ExpandMore } from 'styled-icons/material'; //https://styled-icons.dev  
+import { MdExpandMore } from "react-icons/md";
 export const Container = styled.div`
     display: flex;
     background-color: var(--secondary);
@@ -11,16 +11,17 @@ export const Container = styled.div`
     z-index: 2;
 `;
 
-export const Tittle = styled.h1`
+export const Title = styled.h1`
     font-size: 16px;
     color: var(--white);
     font-weight: bold;
+    text-align: center;
 `;
 
 // <npm add styled-icons>
-export const ExpandIcons = styled(ExpandMore)`
+export const ExpandIcon = styled(MdExpandMore)`
     width: 28px;
     height: 28px;
-    var(--white);
+    color: var(--white);
     cursor: pointer;
 `;

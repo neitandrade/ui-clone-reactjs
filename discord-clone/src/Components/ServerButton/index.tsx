@@ -4,7 +4,6 @@ import Logo from '../../assets/LogoRocketseat.svg';
 
 // as props são mecanismos que permitem transmitir dados de um componente pai para um componente filho
 // conectar os componentes entre si  
-
 export interface Props {
     selected?: boolean;
     isHome?: boolean;
