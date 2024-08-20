@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaHashtag } from "react-icons/fa";
+import { HiHashtag } from "react-icons/hi2";
 
 export const Container = styled.div`
   grid-area: CI;
@@ -14,7 +14,7 @@ export const Container = styled.div`
   z-index: 2;
 `;
 
-export const HashtagIcon = styled(FaHashtag)`
+export const HashtagIcon = styled(HiHashtag)`
   width: 24px;
   height: 24px;
 
