@@ -1,8 +1,9 @@
 // Todo arquivo tsx vai ter um import React from "react" 
 import React from "react";
 
-import { Container } from './styles';
-import { Avatar } from "../UserInfo/styles";
+import { Container, Avatar, Message, Header, Content } from './styles';
+export { Mention } from './styles';
+
 
 export interface Props {
     autor: string;
@@ -13,24 +14,26 @@ export interface Props {
 }
 
 // 
-const ServerName: React.FC = () => {
+const ChannelMessage: React.FC<Props> = ({
+    autor, data, content, hasMention, isBot,
+}) => {
     return (
-       <Container>
-        <Avatar />
+       <Container className={hasMention ? 'mention' : ''}>
+        <Avatar className={isBot ? 'bot' : ''} />
         <Message>
             <Header>
-                <strong>Neitandrade</strong>
+                <strong>{autor}</strong>
 
                 {isBot && <span>Bot</span>} 
 
-                <time>13/10/2023</time>
+                <time>{data}</time>
             </Header>
             <Content>
-
+                {content}
             </Content>
         </Message>
        </Container>
     );
 }
 
-export default ServerName;
+export default ChannelMessage;
