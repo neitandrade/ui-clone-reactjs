@@ -15,6 +15,7 @@ import ServerName from "../ServerName";
 import ChannelInfo from "../ChannelInfo";
 import ChannelList from '../ChannelList';
 import UserInfo from "../UserInfo";
+import ChannelData from "../ChannelData";
 import UserList from "../UserList";
 
 // OBS: basta colocar o nome do componente abaixo para que automaticamente seja criado o import Component.
@@ -28,7 +29,7 @@ const Layout: React.FC = () => {
         <ChannelInfo />
         <ChannelList />
         <UserInfo />
-        {/* <ChannelData /> */} 
+        <ChannelData /> 
         <UserList />
        </Grid>
     );
